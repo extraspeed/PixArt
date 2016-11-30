@@ -1,1 +1,2 @@
 c:\users\peter\documents\visual studio 2015\Projects\Pixart\Pixart\bin\Debug\Pixart.exe.config
+C:\Users\PETER\Documents\GitHub\pixart\Pixart\bin\Debug\Pixart.exe.config
