@@ -13,3 +13,17 @@ C:\Users\PETER\Documents\GitHub\pixart\Pixart\bin\Debug\ru\Pixart.resources.dll
 C:\Users\PETER\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.w_Registration.resources
 C:\Users\PETER\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.w_Registration.ru.resources
 C:\Users\PETER\Documents\GitHub\pixart\Pixart\obj\Debug\ru\Pixart.resources.dll
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\bin\Debug\Pixart.exe.config
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.exe
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.pdb
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\bin\Debug\Pixart.exe
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\bin\Debug\Pixart.pdb
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\bin\Debug\ru\Pixart.resources.dll
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.csprojResolveAssemblyReference.cache
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.Form1.resources
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.Properties.Resources.resources
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.w_Main.resources
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.w_Registration.resources
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.w_Registration.ru.resources
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.csproj.GenerateResource.Cache
+C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\ru\Pixart.resources.dll
