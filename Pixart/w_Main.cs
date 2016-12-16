@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Collections.Specialized;
 
-namespace PixArt
+namespace Pixart
 {
     public partial class w_Main : Form
     {
