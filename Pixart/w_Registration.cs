@@ -5,18 +5,18 @@
     using System.Windows.Forms;
     using System.IO;
     using System.Drawing;
-
+    using System.Text;
     public partial class w_Registration : Form
     {
-        bool reg;
-        public static string lang = @"lang.txt";
-        WebClient client = new WebClient();
-        public w_Main main_w;
-
+        private static string work_dir = "http://www.ru-laboratory.xyz/pixart/";
+        private bool reg;
+        private string lang = @"lang.txt";
+        private w_Main w_main;
         public w_Registration(w_Main main)
         {
             InitializeComponent();
-            main_w = main;
+            w_main = main;
+            #region language
             if (File.Exists(lang) != true)
             {
                 Label_login.Text = "Логин";
@@ -54,26 +54,11 @@
                     b_join_cancel.Text = "Cancel";
                 }
             }
+            #endregion
         }
         private void b_Join_Click(object sender, EventArgs e)
         {
-            if (File.Exists(lang) != true)
-            {
-                SwitchControls.l_autorname.Text = "Добро пожаловать, " + login.Text;
-            }
-            else
-            {
-                string text = System.IO.File.ReadAllText(lang);
-                if (text.Contains("rus"))
-                {
-                    SwitchControls.l_autorname.Text = "Добро пожаловать, " + login.Text;
-                }
-                else if (text.Contains("eng"))
-                {
-                    SwitchControls.l_autorname.Text = "Welcome, " + login.Text;
-                }
-            }
-            SwitchControls.l_autorname.Font = new Font("Microsoft Sans Serif", 14, FontStyle.Regular);
+            #region begin
             bool errors = false; string error_text = "";
             if (login.Text.Length < 5)
             {
@@ -138,14 +123,17 @@
                 RegForms(false);
                 return;
             }
-            string Data = w_Main.GetPost(w_Main.work_dir + "join.php", "Login", login.Text, "Pass", password.Text);
-            if (Int32.Parse(Data) > 0)
+            string Data = Model.GetPost(work_dir + "join.php", "Login", login.Text, "Pass", password.Text);
+            if (int.Parse(Data) > 0)
             {
-                ToogleForms(false);
-                main_w.LogIn(int.Parse(Data));
-                main_w.ReloadImages();
-                w_Registration form = new w_Registration(main_w);
-                form.Close();
+                #endregion
+                Handlers handle = new Handlers();
+                handle.LoginEvent += w_main.ReloadImages;
+                handle.OnLogin();
+                handle.SendLoginEvent += w_main.LogIn;
+                handle.SendLogin(int.Parse(Data), login.Text);
+                Close();
+            #region begin
             }
             else if (Data == "0")
             {
@@ -171,14 +159,14 @@
             {
                 if (File.Exists(lang) != true)
                 {
-                    MessageBox.Show("На сервере ведутся временные технические работы", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("На сервере ведутся технические работы", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
                     string text = System.IO.File.ReadAllText(lang);
                     if (text.Contains("rus"))
                     {
-                        MessageBox.Show("На сервере ведутся временные технические работы", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("На сервере ведутся технические работы", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else if (text.Contains("eng"))
                     {
@@ -188,6 +176,7 @@
                 RegForms(false);
             }
         }
+        #endregion
         private void b_Registration_Click(object sender, EventArgs e)
         {
             reg = !reg;
@@ -282,8 +271,7 @@
                     return;
                 }
 
-                string Data = w_Main.GetPost(w_Main.work_dir + "registration.php", "login", login.Text, "pass", password.Text);
-                MessageBox.Show(Data);
+                string Data = Model.GetPost(work_dir + "registration.php", "login", login.Text, "pass", password.Text);
                 if (Data == "0")
                 {
                     if (File.Exists(lang) != true)
@@ -350,25 +338,18 @@
         }
         private void Join_Cancel_Click(object sender, EventArgs e)
         {
-            SwitchControls.w_reg.Hide();
-            SwitchControls.w_main.Focus();
-        }
-        private void ToogleForms(bool res)
-        {
-            login.Text = "";
-            password.Text = "";
-            password_repeat.Text = "";
-            login.Visible = res;
-            password.Visible = res;
-            label_pass.Visible = res;
-            Label_login.Visible = res;
-            b_Join.Visible = res;
-            b_Registration.Visible = res;
-            Label_or.Visible = res;
+            this.Hide();
         }
         private void reg_cancel_Click(object sender, EventArgs e)
         {
             RegForms(false);
+        }
+        private void Main_Load(object sender, EventArgs e)
+        {
+            b_join_cancel.Visible = true;
+            b_Join.Visible = true;
+            b_Registration.Visible = true;
+
         }
         private void RegForms(bool res)
         {
@@ -402,12 +383,19 @@
             reg_cancel.Visible = res;
             b_join_cancel.Visible = !res;
         }
-        private void Main_Load(object sender, EventArgs e)
+        private void ToogleForms(bool res)
         {
-            b_join_cancel.Visible = true;
-            b_Join.Visible = true;
-            b_Registration.Visible = true;
-
+            login.Text = "";
+            password.Text = "";
+            password_repeat.Text = "";
+            login.Visible = res;
+            password.Visible = res;
+            label_pass.Visible = res;
+            Label_login.Visible = res;
+            b_Join.Visible = res;
+            b_Registration.Visible = res;
+            Label_or.Visible = res;
         }
+
     }
 }

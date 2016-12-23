@@ -221,8 +221,8 @@
             resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-                resources.GetString("comboBox1.Items"),
-                resources.GetString("comboBox1.Items1")});
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1")});
             this.comboBox1.Name = "comboBox1";
             // 
             // b_listbox_ok
@@ -334,14 +334,14 @@
             this.Controls.Add(this.b_info_cancel);
             this.Controls.Add(this.close_prog);
             this.Controls.Add(this.b_cancel_info);
-            this.Controls.Add(this.b_upload);
-            this.Controls.Add(this.b_join);
             this.Controls.Add(this.text_box);
             this.Controls.Add(this.b_reload);
             this.Controls.Add(this.b_minimize);
             this.Controls.Add(this.b_feedback);
             this.Controls.Add(this.b_report);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.b_upload);
+            this.Controls.Add(this.b_join);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;

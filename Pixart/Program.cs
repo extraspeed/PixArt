@@ -16,7 +16,7 @@ namespace Pixart
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(SwitchControls.w_main = new w_Main());
+            Application.Run(new w_Main());
         }
     }
 }
