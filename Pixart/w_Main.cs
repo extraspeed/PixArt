@@ -19,7 +19,7 @@ namespace Pixart
         private Form Zoom;
         private FlowLayoutPanel Flow_Pan;
         private static string lang = @"lang.txt";
-        private static string way = @".\cash\";
+        private static string way = @"cash\";
         private static FormWindowState FormWin = FormWindowState.Normal;
         private static System.Windows.Forms.Timer time = new System.Windows.Forms.Timer();
 
@@ -185,8 +185,8 @@ namespace Pixart
                         {
                             if (!File.Exists(way + data[j]))
                             {
-                                WebClient client = new WebClient();
                                 Uri uri = new Uri(work_dir + "images/s1/" + data[j]);
+                                WebClient client = new WebClient();
                                 client.DownloadFile(uri, way + data[j]);
                             }
                             images[j] = Image.FromFile(way + data[j]);
