@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using System.IO;
-using System.Collections.Specialized;
 
 namespace Pixart
 {
@@ -22,7 +21,6 @@ namespace Pixart
         private static string way = @"cash\";
         private static FormWindowState FormWin = FormWindowState.Normal;
         private static System.Windows.Forms.Timer time = new System.Windows.Forms.Timer();
-
         public w_Main()
         {
             InitializeComponent();
@@ -109,9 +107,9 @@ namespace Pixart
         }
         private void b_join_Click(object sender, EventArgs e)
         {
-            Handlers handle = new Handlers();
-            handle.LoginEvent += ReloadImages;
-            w_Registration w_reg = new w_Registration(this);
+            w_Registration w_reg = new w_Registration();
+            w_reg.LoginEvent += ReloadImages;
+            w_reg.SendLoginEvent += LogIn;
             w_reg.Show();
         }
         private void b_reload_Click(object sender, EventArgs e)
@@ -1424,7 +1422,7 @@ namespace Pixart
             );
             myThread.IsBackground = true;
             myThread.Start();
-        }    
+        }
         public void LogIn(int id, string login)
         {
             userid = id;

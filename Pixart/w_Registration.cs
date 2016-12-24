@@ -1,21 +1,28 @@
 ﻿namespace Pixart
 {
     using System;
-    using System.Net;
     using System.Windows.Forms;
     using System.IO;
-    using System.Drawing;
-    using System.Text;
+    public delegate void OL_1();
+    public delegate void SL_1(int data, string login);
     public partial class w_Registration : Form
     {
+        public event OL_1 LoginEvent;
+        public event SL_1 SendLoginEvent;
+        public void OnLogin()
+        {
+            LoginEvent();
+        }
+        public void SendLogin(int data, string login)
+        {
+            SendLoginEvent(data, login);
+        }
         private static string work_dir = "http://www.ru-laboratory.xyz/pixart/";
         private bool reg;
         private string lang = @"lang.txt";
-        private w_Main w_main;
-        public w_Registration(w_Main main)
+        public w_Registration()
         {
             InitializeComponent();
-            w_main = main;
             #region language
             if (File.Exists(lang) != true)
             {
@@ -127,13 +134,10 @@
             if (int.Parse(Data) > 0)
             {
                 #endregion
-                Handlers handle = new Handlers();
-                handle.LoginEvent += w_main.ReloadImages;
-                handle.OnLogin();
-                handle.SendLoginEvent += w_main.LogIn;
-                handle.SendLogin(int.Parse(Data), login.Text);
+                OnLogin();
+                SendLogin(int.Parse(Data), login.Text);
                 Close();
-            #region begin
+                #region begin
             }
             else if (Data == "0")
             {
