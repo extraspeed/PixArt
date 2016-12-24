@@ -27,3 +27,29 @@ C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.w_Registration.res
 C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.w_Registration.ru.resources
 C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\Pixart.csproj.GenerateResource.Cache
 C:\Users\TEST\Documents\GitHub\pixart\Pixart\obj\Debug\ru\Pixart.resources.dll
+C:\Users\Timoore\Desktop\pixart\Pixart\bin\Debug\Pixart.exe.config
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Debug\Pixart.exe
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Debug\Pixart.pdb
+C:\Users\Timoore\Desktop\pixart\Pixart\bin\Debug\Pixart.exe
+C:\Users\Timoore\Desktop\pixart\Pixart\bin\Debug\Pixart.pdb
+C:\Users\Timoore\Desktop\pixart\Pixart\bin\Debug\ru\Pixart.resources.dll
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Debug\Pixart.csprojResolveAssemblyReference.cache
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Debug\Pixart.Properties.Resources.resources
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Debug\Pixart.w_Main.resources
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Debug\Pixart.w_Registration.resources
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Debug\Pixart.w_Registration.ru.resources
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Debug\Pixart.csproj.GenerateResource.Cache
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Debug\ru\Pixart.resources.dll
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\bin\Debug\Pixart.exe.config
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Debug\Pixart.exe
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Debug\Pixart.pdb
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Debug\Pixart.csprojResolveAssemblyReference.cache
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Debug\Pixart.Properties.Resources.resources
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Debug\Pixart.w_Main.resources
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Debug\Pixart.w_Registration.resources
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Debug\Pixart.w_Registration.ru.resources
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Debug\Pixart.csproj.GenerateResource.Cache
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\bin\Debug\Pixart.exe
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\bin\Debug\Pixart.pdb
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\bin\Debug\ru\Pixart.resources.dll
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Debug\ru\Pixart.resources.dll
