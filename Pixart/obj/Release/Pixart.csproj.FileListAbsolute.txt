@@ -1,0 +1,25 @@
+C:\Users\Timoore\Desktop\pixart\Pixart\bin\Release\Pixart.exe.config
+C:\Users\Timoore\Desktop\pixart\Pixart\bin\Release\Pixart.exe
+C:\Users\Timoore\Desktop\pixart\Pixart\bin\Release\Pixart.pdb
+C:\Users\Timoore\Desktop\pixart\Pixart\bin\Release\ru\Pixart.resources.dll
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Release\Pixart.Properties.Resources.resources
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Release\Pixart.w_Main.resources
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Release\Pixart.w_Registration.resources
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Release\Pixart.w_Registration.ru.resources
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Release\Pixart.csproj.GenerateResource.Cache
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Release\ru\Pixart.resources.dll
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Release\Pixart.exe
+C:\Users\Timoore\Desktop\pixart\Pixart\obj\Release\Pixart.pdb
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\bin\Release\Pixart.exe.config
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Release\Pixart.exe
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Release\Pixart.pdb
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\bin\Release\Pixart.exe
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\bin\Release\Pixart.pdb
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\bin\Release\ru\Pixart.resources.dll
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Release\Pixart.csprojResolveAssemblyReference.cache
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Release\Pixart.Properties.Resources.resources
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Release\Pixart.w_Main.resources
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Release\Pixart.w_Registration.resources
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Release\Pixart.w_Registration.ru.resources
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Release\Pixart.csproj.GenerateResource.Cache
+C:\Users\Timoore\Desktop\pixart — копия\Pixart\obj\Release\ru\Pixart.resources.dll
