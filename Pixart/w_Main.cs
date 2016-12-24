@@ -1109,7 +1109,7 @@ namespace Pixart
             t_load_link.Size = new Size(90, 13);
             t_load_link.TabIndex = 1;
             t_load_link.TabStop = true;
-            t_load_link.Text = author;
+            //t_load_link.Text = author;
 
             t_date.AutoSize = true;
             t_date.Location = new Point(23, 10);
